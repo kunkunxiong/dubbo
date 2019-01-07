@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 生产者 -->
+    <dubbo:application name="dubbo-service"/>
+    <dubbo:registry address="zookeeper://192.168.1.195:2181"/>
+    <bean id="userService" class="com.dubbo.service.UserServiceImpl"/>
+    <dubbo:service interface="com.dubbo.service.UserService" ref="userService" timeout="60000"/>
+        <!-- 要使用不同的端口暴露，不能重复 -->
+    <dubbo:protocol name="dubbo" port="28512" />
+
+    <!-- 消费者 -->
+    <dubbo:consumer check="false"/>
+    <dubbo:reference id="userDao" interface="com.dubbo.dao.UserDao"/>
+
+    <import resource="spring-context.xml"/>
+</beans>

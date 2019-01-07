@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../dubbo jpa模块化/springspringmvcjpadubbo_dao" charset="GBK" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dubbo/controller/UserControllerInterface.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dubbo/dao/UserDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dubbo/entity/Page.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dubbo/entity/User.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dubbo/entity/UserPojo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo_controller/src/main/java/com/dubbo/controller/UserController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_controller/src/main/resources/dubbo.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo_service" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_service/src/main/java/com/dubbo/service/UserServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo_util/src/main/java/com/dubbo/filter/GetMethodConvertingFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_util/src/main/java/com/dubbo/util/DateUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web/src/main/webapp/META-INF" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web/src/main/webapp/WEB-INF/page" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web/src/main/webapp/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web/src/main/webapp/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../dubbo_web/src/main/webapp/js" charset="GBK" />
+  </component>
+</project>

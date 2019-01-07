@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 生产者 -->
+    <dubbo:application name="dubbo-dao"/>
+    <dubbo:registry address="zookeeper://192.168.1.195:2181"/>
+    <!-- 这里bean的id保持和service的对象名一致，否则注入不了 -->
+    <bean id="userDao" class="com.dubbo.dao.UserDaoImpl"/>
+    <dubbo:service interface="com.dubbo.dao.UserDao" ref="userDao" timeout="60000"/>
+    <dubbo:protocol name="dubbo" port="28511" />
+
+    <import resource="spring-db.xml"/>
+</beans>
